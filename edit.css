@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1f4762, #153040);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.103);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ffc619;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #ffc619;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+section {
+    min-height: 100vh;
+    display: flex;/* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add padding inside sections */
+    text-align: center;
+    font-size: 2rem;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: url('bgh.jpg');
+  }
+  
+  #home h2 {
+    font-size: 3rem;
+  }
+
+  #about{
+    padding: 80px 0;
+    color: #ffffff;
+    background-image: url(bghflip.jpg);
+}
+.sub-title{
+    color: #fda300;
+}
+/* Styles for the first column in the about section */
+.about-col-1{
+    flex-basis: 35%;
+}
+/* Styles for the image in the first column of the about section= sakto lang */
+.about-col-1 img{
+    width: 70%;
+    border-radius: 15px;
+}
+/* Styles for the second column in the about section */
+.about-col-2 {
+    flex-basis: 60%;
+    text-align: center;
+    background: #1828336c;
+    border-radius: 15px;
+    margin-bottom: 0;
+}
+
+.about-col-2 p{
+    text-align: left;
+}
+/* Styles for the Skills and Seminars Table */
+.skills-seminars {
+    margin: 0 auto; /* Set left and right margins to auto */
+    width: 80%; /* Adjust table width as needed */
+    background-color: #182833;
+    border-radius: 15px;
+}
+
+.skills-seminars th {
+    font-size: 18px; /* Adjust header font size */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff62;
+    border-radius: 15px;
+}
+
+.skills-seminars td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+.skills-seminars ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.skills-seminars li {
+    margin-bottom: 5px;
+}
+p {
+    margin: 0 0 20px; /* Remove default top and bottom margin, add bottom margin before table */
+}
+
+
+#educ.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-images {
+    display: flex;
+    justify-content: center;
+}
+
+.education-image {
+    text-align: center;
+}
+
+.education-image img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    margin: 10px; /* Add spacing between images */
+}
+
+.education-image p {
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+.education-image {
+    text-align: center;
+    margin: 80px; /* Increase spacing around each image */
+}
+
+.education-image img {
+    width: 200px; /* Increase image width */
+    height: 200px; /* Increase image height */
+    margin-bottom: 10px; /* Add space below each image */
+}
+#port {
+    text-align: center;
+  }
+  
+  .portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolio-section h1 {
+    font-size: 8rem; /* Set the font size of h1 to 3 rem */
+  }
+  
+  .portfolio-section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .portfolio-section ul li {
+    font-size: 2rem; /* Set the font size of li items to 1.2 rem */
+    color: #fda300; /* Set the color of li items to #fda300 */
+    font-weight: bold;
+  }
+#educ.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-images {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-image {
+    text-align: center;
+}
+
+.testimonial-image img {
+    width: 1000px; /* Adjust size as needed */
+    height: 559px; /* Adjust size as needed */
+    margin: 10px; /* Add spacing between images */
+}
+
+.testimonial-image p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffc619;
+}
+.testimonial-image {
+    text-align: center;
+    display: none; /* Hide all images by default */
+}
+.testimonial h2{
+    color:#fda300;
+}
+.video h3{
+    color: #fda300;
+}
+.work-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; /* Center items vertically */
+    margin-top: 20px;
+}/* Video container styles */
+.work-videos {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top videos styles */
+.top-videos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Bottom videos styles */
+.bottom-videos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-videos iframe {
+    margin: 0 10px 20px; /* Adjusted margin for spacing */
+}
+
+
+#contact {
+    padding: 80px 0;
+    color: #ffffff;
+    background-image: url(bgh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .contact-title {
+    color: #fda300;
+  }
+  
+  /* Styles for the first column in the contact section */
+  .contact-col-1 {
+    flex-basis: 35%;
+  }
+  
+  /* Styles for the image in the first column of the contact section */
+  .contact-col-1 img {
+    width: 70%;
+    border-radius: 15px;
+  }
+  
+  /* Styles for the second column in the contact section */
+  .contact-col-2 {
+    flex-basis: 60%;
+    text-align: center;
+    background: #1828336c;
+    border-radius: 15px;
+    margin-top: -15px; /* Adjust this value if there's any gap between columns */
+    padding: 20px;
+  }
+  
+  .contact-col-2 p {
+    text-align: left;
+  }
+  
+  .contact-col-2 a {
+    color: white;
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  .contact-col-2 i {
+    margin-right: 10px;
+   margin: 0 0 20px; /* Remove default top and bottom margin, add bottom margin before table */
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contact-col-1 {
+    flex-basis: 35%;
+    order: 1; /* Change the order of the first column to 1 */
+  }
+  
+  .contact-col-2 {
+    flex-basis: 60%;
+    text-align: center;
+    background: #1828336c;
+    border-radius: 15px;
+    margin-left: 20px; /* Add margin to the left of the second column */
+    padding: 20px;
+    order: 2; /* Change the order of the second column to 2 */
+  }
+
+section {
+    background-image: url('bgh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+section:nth-child(odd) {
+    background-image: url('bghflip.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0; /* Adjust padding as needed */
+}
