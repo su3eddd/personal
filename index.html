@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,7 @@
     <title>Deus justine Web</title>
 </head>
 <body>
+    <!--NAVIGATION BAR-->
     <header class="header">
         <a href="#" class="logo">Deus</a>
         <nav class="navbar">
@@ -22,10 +23,12 @@
         </nav>
     </header>
 
+    <!--HOME PAGE-->
     <section id="home" class="home-section">
         <h2>MAKE IDEAS HAPPENED</h2>
       </section>
 
+      <!--ABOUT ME PAGE-->
       <section id="about" class="about-section">
         <div class="about-col-1">
             <img src="abt.jpg">
@@ -57,7 +60,6 @@
                                 <li>Photography</li>
                                 <li>Pet Owner</li>
                                 <li>Explore Coffee Shops</li>
-                                <!-- Add more hobbies as needed -->
                             </ul>
                         </td>
                     </tr>
@@ -66,6 +68,7 @@
         </div>
     </section>
 
+    <!--EDUCATION PAGE-->
     <section id="educ" class="education">
         <h1>Education</h1>
         <div class="education-images">
@@ -93,16 +96,19 @@
         </div>
     </section>
 
+    <!--PORTFOLIO PAGE-->
     <section id="port" class="portfolio-section">
             <h1>Portfolio</h1>
-            <h2>Seminars Attended</h2>
+            <h2>Achievements</h2>
         <ul>
-            <li>TESDA Certificate: SMART Android and Mobile</li>
-            <li>LDC Student Leader, Leadership Training</li>
-            <li> 13th EdukCircle International Convention on Engineering and Computer Technology</li>      
+            <li><q>TESDA Certificate: SMART Android and Mobile</q></li>
+            <li><q>LDC Student Leader, Leadership Training</q></li>
+            <li><q>Alison Certificate: Basics of Javascript</q></li>
+            <li><q>13th EdukCircle International Convention on Engineering and Computer Technology</q></li>      
           </ul>
     </section>
 
+    <!--TESTIMONIAL PAGE-->
     <section id="testimonial" class="testimonial">
         <h2>Testimonials</h2>
         <div class="testimonial-images">
@@ -124,32 +130,40 @@
         </div>
     </section>
 
-    <section id="video" class="video">
-        <h3>My Works</h3>
+  <!--MY WORKS PAGE-->
+<section id="video" class="video">
+    <h3>My Works</h3>
     <div class="work-videos">
-        <iframe width="560" height="315" src="sample vids/silk.mp4" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="sample vids/hope.mp4" frameborder="0" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="sample vids/sun.mp4" frameborder="0" allowfullscreen></iframe>
+        <div class="top-videos">
+            <iframe width="560" height="315" src="sample vids/hope.mp4" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="sample vids/tech.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="bottom-videos">
+            <iframe width="560" height="315" src="sample vids/star.mp4" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="sample vids/sun.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
-    </section>
+</section>
 
-    <section id="contact" class="contact-section">
-        <div class="contact-info">
-          <div class="contact-col-1">
+    <!--CONTACT PAGE-->
+<section id="contact" class="contact-section">
+    <div class="contact-info">
+        <div class="contact-col-1">
             <img src="cont.jpg" alt="Profile Picture">
-          </div>
-          <div class="contact-col-2">
+        </div>
+        <div class="contact-col-2">
             <h1 class="contact-title">Contact Me</h1>
-            <p><strong>Email:</strong>      deusvictorio7@gmail.com</p>
-            <p><strong>Phone Number:</strong>       +63 977 140 4853</p>
-            <p><strong>Address:</strong>        Purok 3 Lamot 2, Calauan, Laguna</p>
+            <p><strong>Email:</strong> deusvictorio7@gmail.com</p>
+            <p><strong>Phone Number:</strong> +63 977 140 4853</p>
+            <p><strong>Address:</strong> Purok 3 Lamot 2, Calauan, Laguna</p>
             <a href="https://www.facebook.com/DJ.VICTORIO23/"><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook Page</a>
             <br />
             <a href="https://www.instagram.com/su3ddd?igsh=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR1aUoCdbgBpEcuRgXnfnplOxjQPa4ZqEmlwnZgKhf5w6cFaCmcuJ676LuU"><i class="fab fa-instagram"></i>&nbsp;&nbsp;Instagram</a>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
 
+      <!--JAVASCRIPT FOR NAVIGATION FUCNTION-->
     <script>
         const navLinks = document.querySelectorAll('.navbar a');
 
@@ -170,6 +184,8 @@
             });
         });
     </script>
+
+    <!--JAVASCRIPT FOR TESTIMONIAL SLIDE SHOW-->
     <script>
         let slideIndex = 0;
         showSlides();

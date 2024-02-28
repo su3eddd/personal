@@ -231,16 +231,34 @@ p {
     justify-content: space-around;
     align-items: center; /* Center items vertically */
     margin-top: 20px;
+}/* Video container styles */
+.work-videos {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top videos styles */
+.top-videos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Bottom videos styles */
+.bottom-videos {
+    display: flex;
+    justify-content: space-around;
 }
 
 .work-videos iframe {
     margin: 0 10px 20px; /* Adjusted margin for spacing */
 }
 
+
 #contact {
     padding: 80px 0;
     color: #ffffff;
-    background-image: url(bghflip.jpg);
+    background-image: url(bgh.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,6 +297,9 @@ p {
     color: white;
     font-size: 1.2em;
     margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
   }
   
   .contact-col-2 i {
